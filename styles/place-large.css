@@ -1,0 +1,53 @@
+@media screen and (min-width: 545px) {
+    header h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-picture figcaption {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    .container {
+        width: 300px;
+        max-width: none;
+        background-color: rgba(0, 0, 0, .6);
+        color: white;
+        border: 1px solid black;
+    }
+
+    #hero {
+        width: 100%;
+        max-width: none;
+    }
+
+    #weather-box h2::after {
+        content: "Weather ⛅️";
+    }
+
+    #large-hero {
+        width: 100%;
+        max-width: none;
+    }
+
+    #data-box {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+    }
+
+    #weather-box {
+        position: absolute;
+        bottom: 40px;
+        right: 30px;
+    }
+
+    #weather-icon {
+        display: block;
+    }
+
+    #weather-svg {
+        display: none;
+    }
+}

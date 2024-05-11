@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Place - Martin Detlefsen</title>
+    <meta name="description" content="WDD 131 - Martin Detlefsen">
+    <meta name="author" content="Martin Detlefsen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <h1>Argentina</h1>
+    </nav>
+    <main>
+        <section>
+            <picture class="hero-picture">
+                <source srcset="images/buenos-aires-small-hero.webp" media="(max-width:545px)"> 
+                <img src="images/buenos-aires-large-hero.webp" id="large-hero" alt="bueno-aires-hero" width="545">
+            </picture>
+        </section>
+        <section id="data-box" class="container">
+            <h2>Data</h2>
+            <p><span class="bold">Area: </span>2,78 millons km²</p>
+            <p><span class="bold">Population: </span>46,23 millons</p>
+            <p><span class="bold">Capital: </span>Buenos Aires</p>
+            <p><span class="bold">Languages: </span>Spanish</p>
+            <p><span class="bold">Currency: </span>Pesos</p>
+            <p><span class="bold">Time Zone: </span>GMT-3</p>
+            <p><span class="bold">Calling Code: </span>+54</p>
+            <p><span class="bold">Internet TLD: </span>.ar</p>
+        </section>
+        <section id="weather-box" class="container">
+            <h2></h2>
+            <img src="images/sunny.svg" alt="weather" id="weather-svg" width="100">
+            <h3 id="weather-icon">☀️</h3>
+            <p><span class="bold">Temperature: </span>32°C</p>
+            <p><span class="bold">Conditions: </span>Sunny</p>
+            <p><span class="bold">Wind: </span>18 km/h</p>
+            <p><span class="bold">Wind Chill: </span><span id="wind-chill"></span>°C</p>
+        </section>
+    </main>
+    <footer>
+        <p>©️ <span id="currentyear"></span> - Martin Detlefsen - Argentina</p>
+        <p> Last Modified <span id="lastModified"></span> </p>
+    </footer>
+</body>
+
+</html>
