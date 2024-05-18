@@ -6,7 +6,7 @@ function calculateWindChill(temperature, windspeed) {
     return chill;
 }
 const windchillNumber = calculateWindChill(temperature, windspeed);
-if (temperature <= 10 && windspeed > 4.8) {
+if (temperature <= 20 && windspeed > 4.8) {
     windchill.textContent = windchillNumber.toFixed(2);
 } else {
     windchill.textContent = "N/A";
