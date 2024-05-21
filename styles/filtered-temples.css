@@ -167,37 +167,5 @@ footer p {
     margin: 5px 0;
 }
 
-@media (min-width: 37.5em) {
-    header {
-        font-size: 1.2rem;
-        padding: 5px;
-    }
 
-    h1 {
-        font-size: 2.5rem;
-        text-align: center;
-        margin: 1rem 0;
-    }
 
-    h2 {
-        font-size: 2rem;
-        text-align: center;
-        margin: 0.5rem 0;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    .navigation {
-        display: flex;
-        flex-direction: row;
-        color: black;
-
-    }
-
-    .navigation a {
-        display: block;
-        flex: 1 1 100%;
-    }
-}
