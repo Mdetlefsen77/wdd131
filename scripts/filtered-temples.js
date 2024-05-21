@@ -61,7 +61,30 @@ document.addEventListener("DOMContentLoaded", function () {
             imageUrl:
                 "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
         },
-        // Add more temple objects here...
+        {
+            templeName: "Oakland California",
+            location: "Oakland, California",
+            dedicated: "1964, November, 17",
+            area: 95000,
+            imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/oakland-california/400x250/02-Oakland-Temple-Exterior-2236160.jpg"
+        },
+        {
+            templeName: "Sacramento California",
+            location: "Sacramento, California",
+            dedicated: "2006, September, 3",
+            area: 19500,
+            imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sacramento-california/400x250/sacramento-temple-769989-wallpaper.jpg"
+        },
+        {
+            templeName: "Rome Italy",
+            location: "Rome, Italy",
+            dedicated: "2019, March, 10",
+            area: 41010,
+            imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/400x250/2-Rome-Temple-2190090.jpg"
+        }
     ];
 
     function createTempleCard(templesList = temples) {
@@ -99,23 +122,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById('home').addEventListener('click', () => {
         createTempleCard();
-        title.textContent = "Temple Album";
+        title.textContent = "Home";
     });
 
     document.getElementById('old').addEventListener('click', () => {
-        filterTemples(temple => new Date(temple.dedicated).getFullYear() < 2005, "Old Temples");
+        filterTemples(temple => new Date(temple.dedicated).getFullYear() < 1900, "Old Temples");
     });
 
     document.getElementById('new').addEventListener('click', () => {
-        filterTemples(temple => new Date(temple.dedicated).getFullYear() >= 2005, "New Temples");
+        filterTemples(temple => new Date(temple.dedicated).getFullYear() > 2000, "New Temples");
     });
 
     document.getElementById('large').addEventListener('click', () => {
-        filterTemples(temple => temple.area > 15000, "Large Temples");
+        filterTemples(temple => temple.area > 90000, "Large Temples");
     });
 
     document.getElementById('small').addEventListener('click', () => {
-        filterTemples(temple => temple.area <= 15000, "Small Temples");
+        filterTemples(temple => temple.area < 10000, "Small Temples");
     });
 
     createTempleCard();
