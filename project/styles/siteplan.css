@@ -1,0 +1,52 @@
+/* siteplan.css */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333333;
+    text-align: center;
+}
+
+header,
+footer {
+    background-color: #FF6347;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1,
+footer p {
+    font-family: Georgia, serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    color: #FF5733;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
