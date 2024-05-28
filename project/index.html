@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website - Home</title>
+    <meta name="description"
+        content="Explore our collection of recipes and find the perfect dish for your occasion or occasional dinner.">
+    <meta name="keywords" content="recipe, recipes, dish, dishes, dinner, dinner recipes, dinner dish">
+    <meta name="author" content="Martin Detlefsen">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Recipe Website</h1>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </header>
+    <main>
+       
+            <div id="recipeCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" id="carousel-content">
+                    <!-- Contenido del carrusel generado dinámicamente -->
+                </div>
+                <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+      
+        <section class="recipe-day-container">
+            <div class="recipe-day" id="recipe-day">
+                <h2>Recipe of Day</h2>
+                <img id="recipe-day-img" alt="Receta del Día" style="width: 400px; height: 400px; object-fit: cover;">
+                <p id="recipe-day-desc"></p>
+            </div>
+            <a href="recipes.html" class="details-button">See all Recipes</a>
+        </section>
+    </main>
+    <footer>
+        <p>©️ <span id="currentyear"></span> - Martin Detlefsen - Argentina</p>
+        <p> Last Modified <span id="lastModified"></span> </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+    <script src="scripts/scripts.js" defer></script>
+</body>
+
+</html>

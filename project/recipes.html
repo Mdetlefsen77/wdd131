@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website - Recipes</title>
+    <meta name="description"
+        content="Explore our collection of recipes and find the perfect dish for your occasion or occasional dinner.">
+    <meta name="keywords" content="recipe, recipes, dish, dishes, dinner, dinner recipes, dinner dish">
+    <meta name="author" content="Martin Detlefsen">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+</head>
+
+<body>
+    <header>
+        <h1>Our Recipes</h1>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </header>
+    <main>
+        <section class="search-bar">
+            <input type="text" id="search" placeholder="Search for a recipe...">
+            <select id="category-filter">
+                <option value="">All Categories</option>
+            </select>
+        </section>
+        <section class="recipe-list">
+            <h2>All Recipes</h2>
+            <!-- List of recipes will go here -->
+        </section>
+    </main>
+    <footer>
+        <p>©️ <span id="currentyear"></span> - Martin Detlefsen - Argentina</p>
+        <p> Last Modified <span id="lastModified"></span> </p>
+    </footer>
+    <script src="scripts/scripts.js" defer></script>
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <img id="modal-image" src="" alt="">
+            <div id="modal-details"></div>
+        </div>
+    </div>
+</body>
+
+</html>

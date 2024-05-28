@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website - Contact</title>
+    <meta name="description"
+        content="Explore our collection of recipes and find the perfect dish for your occasion or occasional dinner.">
+    <meta name="keywords" content="recipe, recipes, dish, dishes, dinner, dinner recipes, dinner dish">
+    <meta name="author" content="Martin Detlefsen">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </header>
+    <main>
+        <div class="container-contact">
+            <h2>Contact Us</h2>
+            <p>Please fill out the form below to contact us.</p>
+            <section class="contact-form">
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="name">Subscribe our newsletter <input type="radio" name="subscribe"
+                            id="subscribe"></label>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>©️ <span id="currentyear"></span> - Martin Detlefsen - Argentina</p>
+        <p> Last Modified <span id="lastModified"></span> </p>
+    </footer>
+    <script src="scripts/scripts.js" defer></script>
+</body>
+
+</html>
